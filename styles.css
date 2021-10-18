@@ -1,29 +1,10 @@
-#divSemaforo {
-  width: 150px;
-  height: 400px;
-  background-color: rgb(22, 22, 21);
-  display: grid;
-  padding: 25px;
-  margin-top: 10px;
+#titulo{
+  display: inline-block;
 }
-#divRojo {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  border-radius: 50%;
+#navegacion{
+  display: inline-block;
 }
-#divAmarillo {
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 10px;
-}
-#divVerde {
-  background-color: green;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 10px;
+ul{
+  display: flex;
+  justify-content: space-between;
 }
