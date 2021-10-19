@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guayerd Bikes - Bicicletas de Competición y Urbanas</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./estilo.css" />
+    <link rel="stylesheet" href="./estilocontactos.css" />
+  </head>
+  <body>
     <div class="contenedor">
-        <h1 class="logo">
-            Guayerd Bikes
-        </h1>
-        <nav class="navegacion">
-            <ul class="contList">
-                <li class="lista"><a href="home.html">Home</a></li>
-                <li class="lista"><a href="productos.html">Productos</a></li>
-                <li class="lista"><a href="contactos.html">Contacto</a></li>
-            </ul>
-
-        </nav>
+      <h1 class="logo">Guayerd Bikes</h1>
+      <nav class="navegacion">
+        <ul class="contList">
+          <li class="lista"><a href="home.html">Home</a></li>
+          <li class="lista"><a href="productos.html">Productos</a></li>
+          <li class="lista"><a href="contactos.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-</body>
+    <div class="titulof">
+      <h1>Contacto</h1>
+    </div>
+
+    <div class="formulario">
+      <div class="contenido-contacto">
+        <div class="caja-campo">
+          <label>Nombre:</label>
+          <input
+            class="cont2"
+            type="text"
+            name="Nombre"
+            placeholder="Ingresa tu nombre"
+          />
+        </div>
+        <div class="caja-campo">
+          <label>Email:</label>
+          <input
+            class="cont2"
+            type="mail"
+            name="Email"
+            placeholder="Ingresa tu E-mail"
+          />
+        </div>
+        <div class="caja-campo">
+          <label>Mensaje:</label>
+          <textarea class="cont2" name="mensaje" cols="30" rows="10"></textarea>
+        </div>
+        <div class="button">
+          <input type="submit" value="Enviar" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
