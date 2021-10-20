@@ -45,3 +45,7 @@
 .productos h2 {
     margin-bottom: 20px;
 }
+.descripcionProducto li{
+    margin-bottom: 3px;
+    padding: 5px;
+}
