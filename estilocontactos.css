@@ -21,6 +21,7 @@ h1,h2 {
 .contenido-contacto .caja-campo label {
   width: 150px;
   display: inline-block;
+  color: #fff;
 }
 .contenido-contacto .caja-campo input,
 .contenido-contacto .caja-campo textarea, .caja-campo select {
