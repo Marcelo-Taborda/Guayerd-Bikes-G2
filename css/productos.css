@@ -22,34 +22,38 @@ body {
     /* background-color: bisque; */
     /* border: 3px solid #01A1DD; */
     box-shadow: 0px 0px 20px #01A1DD;
+    justify-content: flex-start;
     border-radius: 25px;
     padding-right: 30px;
     background-color: #fff;
 }
 
 .imagenProducto {
-    width: 30%;
+    width: 400px;
+    height: 300px;
     box-sizing: border-box;
-    border: 3px solid #01A1DD;
     border-radius: 25px;
+    margin: auto;
+    padding: 10px;
 }
 
 .imagenProducto img {
     border-radius: 25px;
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 300px;
+    border: 3px solid #01A1DD;
+    border-radius: 25px;
     /* object-fit: scale-down; */
 }
 
 .descripcionProducto {
-    width: 70%;
+    width: 700px;
     margin-left: 30px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 30px;
 }
-
 .productos h2 {
     margin-bottom: 20px;
 }

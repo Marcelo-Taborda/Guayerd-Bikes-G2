@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    background-color :rgb(23, 237, 180);
+}
 .contenedor{
     background-color: #212C65;
     display: flex;
@@ -47,4 +50,27 @@ img{
     display:block;
     width: 100%;
     height: 600px;
+}
+.linkH:hover, linkH.active{
+    text-decoration: underline;
+}
+.premios{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    padding: 20px 5px;
+}
+.premios_años{
+    min-width: 15%;
+    text-align: center;
+    background-color: blanchedalmond;
+    
+}
+.items {
+    border: 1px solid black;
+    padding: 5px;
+}
+.text{
+    padding: 0 15px;
 }
