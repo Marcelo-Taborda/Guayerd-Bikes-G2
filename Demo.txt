@@ -1,4 +1,6 @@
 DEMO Técnica
+
+Comparte pantalla -> Marcelo Taborda
  
 - Presentación (Tote*/)
 - Introducción al MENU Y HOME (Jesus)
@@ -6,3 +8,4 @@ DEMO Técnica
 - Desarrollo de la página de PRODUCTOS (Marcelo)
 - Introducción a la página de CONTACTOS (Angie/Rafa)
 - Cierre de la presentación (Tote*/)
+
