@@ -59,3 +59,8 @@ footer .social:last-child {
 .airIcon img {
     height: auto;
 }
+
+.linkH:hover, linkH.active{
+    text-decoration: underline;
+}
+

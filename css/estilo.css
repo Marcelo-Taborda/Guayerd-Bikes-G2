@@ -6,12 +6,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-color :rgb(23, 237, 180);
+    background-color :white;
 }
 .contenedor{
     background-color: #212C65;
     display: flex;
-    height: 70px;
+    height: 80px;
     width: 100%;
     position: sticky;
     top: 0px;
@@ -21,7 +21,7 @@ body{
 }
 .logo{
     color: white;
-    font-size:  36 px;
+    font-size:  40px;
     padding: 0 80px;
     font-weight: bold;
 }
@@ -73,4 +73,30 @@ h2{
 }
 .text{
     padding: 0 15px;
+    font-size: 20px;
+    
+}
+
+.info {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 36px;
+    background-color: #01A1DD;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.text {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.text p {
+    margin-bottom: 15px;
 }

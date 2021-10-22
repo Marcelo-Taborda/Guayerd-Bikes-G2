@@ -44,6 +44,8 @@ body {
     border: 3px solid #01A1DD;
     border-radius: 25px;
     /* object-fit: scale-down; */
+    cursor: zoom-in;
+    transition: .3s;
 }
 
 .descripcionProducto {
@@ -60,4 +62,24 @@ body {
 .descripcionProducto li{
     margin-bottom: 3px;
     padding: 5px;
+}
+
+.productos h1 {
+    background-color: #01A1DD;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.descripcionProducto a {
+    color: black;
+    text-decoration: none;
+}
+
+.descripcionProducto a:hover {
+    text-decoration: underline;
+}
+
+.imagenProducto img:hover {
+    transform: scale(1.05);
+    transition: .3s;
 }
