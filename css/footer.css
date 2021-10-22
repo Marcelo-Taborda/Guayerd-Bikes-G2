@@ -60,7 +60,6 @@ footer .social:last-child {
     height: auto;
 }
 
-.linkH:hover, linkH.active{
+.linkH:hover{
     text-decoration: underline;
 }
-

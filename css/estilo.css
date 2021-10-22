@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body{
     background-color :white;
 }
+/* HEADER Y MENU */
 .contenedor{
     background-color: #212C65;
     display: flex;
@@ -17,23 +19,26 @@ body{
     top: 0px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 5 px 0 10 px rgba(0, 0, 0, .6);
 }
+
 .logo{
     color: white;
     font-size:  40px;
     padding: 0 80px;
     font-weight: bold;
 }
+
 .contList{
     display: flex;
     list-style: none;
     margin-right:  30px;
 }
+
 .lista {
     border-radius: 3px;
     margin: 0 5px;
 }
+
 .lista a{
     padding: 7px 13px;
     text-decoration: none;
@@ -42,35 +47,45 @@ body{
     text-transform: uppercase;
     color: #fff;
 }
-.lista:hover, lista.active{
+
+.lista:hover{
     background-color: rgba(0, 0, 0, .3);
     transition: .5s;
 }
+
+.linkH:hover, linkH.active{
+    text-decoration: underline;
+}
+
+/* BANNER */
 img{
     display:block;
     width: 100%;
     height: 600px;
 }
-.linkH:hover, linkH.active{
-    text-decoration: underline;
-}
+
+/* INFO */
 .premios{
     display: flex;
     justify-content: center;
 }
+
 h2{
     padding: 20px 5px;
 }
+
 .premios_años{
     min-width: 15%;
     text-align: center;
     background-color: blanchedalmond;
     
 }
+
 .items {
     border: 1px solid black;
     padding: 5px;
 }
+
 .text{
     padding: 0 15px;
     font-size: 20px;
