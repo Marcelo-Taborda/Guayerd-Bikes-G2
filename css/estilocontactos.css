@@ -62,7 +62,6 @@ body {
   text-align: justify;
   text-shadow: 7px 13px 35px #000;
   line-height: 1.2;
-  
 }
 
 .descripción p {
@@ -105,10 +104,20 @@ body {
   margin-bottom: 100px;
 }
 
-.titulof h2, .titulof h1 {
+.titulof h2,
+.titulof h1 {
   background-color: #01a1dd;
   text-align: center;
   width: 1200px;
   padding: 20px 0px;
   font-size: 36px;
+}
+#codigo2 {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background-color: #01a1dd;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  border: 10px solid cyan;
 }
