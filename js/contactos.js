@@ -8,7 +8,7 @@ function codigo() {
     divcodigo2.style.display = "flex";
     console.log(divcodigo);
     divcodigo.innerText =
-      "Estimado " +
+      "Estimado/a " +
       localStorage.getItem("nombre") +
       ", ¡gracias por elegirnos! Le obsequiamos el codigo de " +
       `${hotsale[aleatorio]}HOTSALE para obtener un ${hotsale[aleatorio]}% de descuento` +
@@ -19,3 +19,8 @@ function codigo() {
   }
 }
 codigo();
+
+function cerrarPopup() {
+  const divcodigo2 = document.getElementById("codigo2");
+  divcodigo2.style.display = "none";
+}

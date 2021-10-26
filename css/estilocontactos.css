@@ -125,3 +125,13 @@ body {
   align-items: center;
   padding: 20px;
 }
+
+#boton {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-weight: bold;
+}
