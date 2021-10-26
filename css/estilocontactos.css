@@ -115,9 +115,13 @@ body {
 #codigo2 {
   position: fixed;
   width: 400px;
-  height: 400px;
+  /* height: 400px; */
   background-color: #01a1dd;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
   border: 10px solid cyan;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
