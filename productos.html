@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/productos.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <script src="js/script.js"></script>
-    <script src="js/productos.js"></script>
     <script>
       (function (h, e, a, t, m, p) {
         m = e.createElement(a);
@@ -55,6 +53,22 @@
     />
   </head>
   <body onload="alCargar()">
+
+    <div id="codigo2">
+      <p id="codigo"></p>
+      <button id="boton" onclick="cerrarPopup()">X</button>
+      <button id="aceptarOferta" onclick="ofertaPersonalizada()">SI</button>
+      <input type="text" id="inputNombre" placeholder="Ingresa tu nombre" required>
+        <input type="email" id="inputMail" placeholder="Ingresa tu mail" required>
+        <div>
+            <input type="checkbox" id="inputRN"><label id="label">¿Desea recibir novedades?</label>
+        </div>
+        <div class="botones" id="botones">
+            <button id="aceptar" onclick="respuesta('si')">SI</button>
+            <button id="rechazar" onclick="respuesta('no')">NO</button>
+        </div>
+    </div>
+
     <div class="contenedor">
       <h1 class="logo">Guayerd Bikes</h1>
       <nav class="navegacion">
@@ -177,5 +191,7 @@
     <a href="https://wa.me/5491161752344" class="airIcon"
       ><img src="imagenes/whatsapp.png" alt=""
     /></a>
+    <script src="js/script.js"></script>
+    <script src="js/productos.js"></script>
   </body>
 </html>

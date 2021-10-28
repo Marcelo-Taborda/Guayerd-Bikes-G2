@@ -7,8 +7,8 @@
     <title>Guayerd Bikes - Bicicletas de Competición y Urbanas</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/script.js"></script>
-    <script src="js/home.js"></script>
+    
+    
     <script>
         (function(h,e,a,t,m,p) {
         m=e.createElement(a);m.async=!0;m.src=t;
@@ -33,7 +33,21 @@
     <meta property="twitter:description" content="Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región. Atención personalizada y venta de accesorios.">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 </head>
-<body onload="alCargar()">
+<body>
+    <div id="codigo2">
+        <p id="codigo"></p>
+        <button id="boton" onclick="cerrarPopup()">X</button>
+        <input type="text" id="inputNombre" placeholder="Ingresa tu nombre" required>
+        <input type="email" id="inputMail" placeholder="Ingresa tu mail" required>
+        <div>
+            <input type="checkbox" id="inputRN"><label id="label">¿Desea recibir novedades?</label>
+        </div>
+        <div class="botones">
+            <button id="aceptar" onclick="respuesta('si')">SI</button>
+            <button id="rechazar" onclick="respuesta('no')">NO</button>
+        </div>
+    </div>
+
     <div class="contenedor">
         <h1 class="logo">
             Guayerd Bikes
@@ -208,5 +222,7 @@
     </footer>
 
     <a href="https://wa.me/5491161752344" class="airIcon"><img src="imagenes/whatsapp.png" alt=""></a>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

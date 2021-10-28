@@ -1,5 +1,7 @@
 let hotsale = [5, 10, 15, 20, 25];
 let aleatorio = Math.floor(Math.random() * 4) + 0;
+const botones = document.getElementById("botones");
+
 // const divcodigo = document.getElementById("codigo");
 function codigo() {
   const divcodigo = document.getElementById("codigo");
@@ -16,7 +18,9 @@ function codigo() {
     setTimeout(() => {
       divcodigo2.style.display = "none";
     }, 15000);
+    botones.style.display = "none";
   }
+  
 }
 codigo();
 

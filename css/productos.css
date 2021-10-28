@@ -81,3 +81,34 @@ body {
     transform: scale(1.5);
     transition: .3s;
 }
+
+#codigo2 {
+    position: fixed;
+    width: 400px;
+    /* height: 400px; */
+    background-color: #01a1dd;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    border: 10px solid cyan;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #boton {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: bold;
+  }
+
+  #aceptar, #aceptarOferta {
+    margin-top: 15px;
+    padding: 5px 10px;
+  }
+  

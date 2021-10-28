@@ -115,3 +115,47 @@ h2{
 .text p {
     margin-bottom: 15px;
 }
+
+
+#codigo2 {
+    position: fixed;
+    width: 400px;
+    /* height: 400px; */
+    background-color: #01a1dd;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    border: 10px solid cyan;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #boton {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: bold;
+  }
+
+  #aceptar, #rechazar {
+    margin-top: 15px;
+    padding: 5px 0px;
+    width: 34px;
+  }
+  
+  #inputMail, #inputNombre {
+      margin-top: 15px;
+      padding: 5px;
+      display: none;
+  }
+
+  #inputRN, #label {
+      margin-top: 15px;
+      margin-right: 5px;
+      display: none;
+  }
