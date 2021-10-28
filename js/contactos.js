@@ -1,8 +1,10 @@
 let hotsale = [5, 10, 15, 20, 25];
 let aleatorio = Math.floor(Math.random() * 4) + 0;
 const botones = document.getElementById("botones");
+const inputsCont = document.getElementsByClassName("cont2");
 
-// const divcodigo = document.getElementById("codigo");
+// Esta funcion abre el popup de codigo de descuento//
+codigo();
 function codigo() {
   const divcodigo = document.getElementById("codigo");
   const divcodigo2 = document.getElementById("codigo2");
@@ -19,11 +21,12 @@ function codigo() {
       divcodigo2.style.display = "none";
     }, 15000);
     botones.style.display = "none";
+    inputsCont[0].value = localStorage.getItem("nombre");
+    inputsCont[1].value = localStorage.getItem("mail");
   }
-  
 }
-codigo();
 
+// Esta funcion cierra el popup//
 function cerrarPopup() {
   const divcodigo2 = document.getElementById("codigo2");
   divcodigo2.style.display = "none";

@@ -1,7 +1,6 @@
-//Esta funcion muestra el PopUp
+//Esta funcion muestra el PopUp que saluda segun la hora//
 codigo();
 function codigo() {
-    
     if (localStorage.getItem('nombre')) {
         botonAceptar.style.display = "none";
         botonRechazar.style.display = "none";
@@ -28,27 +27,3 @@ function cerrarPopup() {
     const divcodigo2 = document.getElementById("codigo2");
     divcodigo2.style.display = "none";
 }
-
-//Esta funcion nos dirige a la pagina "OfertasPersonalizadas.html"
-function ofertaPersonalizada() {
-    window.location.replace("OfertasPersonalizadas.html");
-}
-
-//Funcion Vieja
-/* function saludo() {
-    if (localStorage.getItem('nombre')) {
-        const fecha = new Date();
-        const hora = fecha.getHours();
-        console.log(hora)
-        if (hora >= 0 && hora < 6) {
-            alert("Buenas madrugadas, " + localStorage.getItem('nombre'));
-        } else if (hora >= 6 && hora < 12) {
-            alert("Buen dia, " + localStorage.getItem('nombre'));
-        } else if (hora >= 12 && hora < 19) {
-            alert("Buenas tardes, " + localStorage.getItem('nombre'));
-        } else {
-            alert("Buenas noches, " + localStorage.getItem('nombre'));
-        }
-    }
-}
-saludo() */
