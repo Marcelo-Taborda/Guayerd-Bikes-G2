@@ -23,7 +23,7 @@ function preguntarDatos() {
 //Esta funcion verifica la respuesta de usuario//
 function respuesta(siOno) {
     if (siOno === "si") {
-        divcodigo.innerText = "Ingresa tu datos: "
+        divcodigo.innerText = "Ingresá tus datos: "
         botonRechazar.style.display = "none";
         botonAceptar.innerText = "OK";
         inputMail.style.display = "block";
