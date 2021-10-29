@@ -9,6 +9,7 @@ function codigo() {
   const divcodigo = document.getElementById("codigo");
   const divcodigo2 = document.getElementById("codigo2");
   if (localStorage.getItem("nombre")) {
+    aceptarOferta.style.display = "none"
     divcodigo2.style.display = "flex";
     console.log(divcodigo);
     divcodigo.innerText =

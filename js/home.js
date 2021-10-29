@@ -2,6 +2,7 @@
 codigo();
 function codigo() {
     if (localStorage.getItem('nombre')) {
+        aceptarOferta.style.display = "none"
         botonAceptar.style.display = "none";
         botonRechazar.style.display = "none";
         const divcodigo = document.getElementById("codigo");

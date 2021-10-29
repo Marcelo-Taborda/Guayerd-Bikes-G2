@@ -7,11 +7,12 @@ const inputMail = document.getElementById("inputMail");
 const inputRN = document.getElementById("inputRN");
 const label = document.getElementById("label");
 const aceptarOferta = document.getElementById("aceptarOferta");
+var ingresoDatos;
 
 //Esta funcion pregunta al usuario si desea ingresar su nombre y mail//
 preguntarDatos();
 function preguntarDatos() {
-    if (!localStorage.getItem('mail') && !localStorage.getItem('nombre')) {
+    if (!localStorage.getItem('mail') && !localStorage.getItem('nombre') && !localStorage.getItem('ingresoDatos')) {
         divcodigo2.style.display = "flex";
         divcodigo.innerText = "¿Desea ingresar su nombre y mail?";
         botonAceptar.style.display = "inline";
@@ -48,6 +49,8 @@ function respuesta(siOno) {
             inputMail.value = ""
         }
     } else if (siOno === "no") {
+        ingresoDatos = false;
+        localStorage.setItem('ingresoDatos', ingresoDatos);
         cerrarPopUp();
     }
 }
