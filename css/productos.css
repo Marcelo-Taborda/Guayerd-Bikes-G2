@@ -1,114 +1,117 @@
 body {
-    background: url(../imagenes/Bike-Background-Contact.png) no-repeat fixed ;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
+  background: url(../imagenes/Bike-Background-Contact.png) no-repeat fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
 
 .productos h1 {
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .productos {
-    max-width: 1200px;
-    margin: 15px auto;
+  max-width: 1200px;
+  margin: 15px auto;
 }
 
 .articulo {
-    display: flex;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 20px #01A1DD;
-    justify-content: flex-start;
-    border-radius: 25px;
-    padding-right: 30px;
-    background-color: #fff;
+  display: flex;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px #01a1dd;
+  justify-content: flex-start;
+  border-radius: 25px;
+  padding-right: 30px;
+  background-color: #fff;
 }
 
 .imagenProducto {
-    width: 400px;
-    height: 300px;
-    box-sizing: border-box;
-    border-radius: 25px;
-    margin: auto;
-    padding: 10px;
+  width: 400px;
+  height: 300px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: auto;
+  padding: 10px;
 }
 
 .imagenProducto img {
-    border-radius: 25px;
-    width: 400px;
-    height: 300px;
-    border: 3px solid #01A1DD;
-    border-radius: 25px;
-    cursor: zoom-in;
-    transition: .3s;
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  border: 3px solid #01a1dd;
+  border-radius: 25px;
+  cursor: zoom-in;
+  transition: 0.3s;
 }
 
 .descripcionProducto {
-    width: 700px;
-    margin-left: 30px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+  width: 700px;
+  margin-left: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 .productos h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.descripcionProducto li{
-    margin-bottom: 3px;
-    padding: 5px;
+.descripcionProducto li {
+  margin-bottom: 3px;
+  padding: 5px;
 }
 
 .productos h1 {
-    background-color: #01A1DD;
-    text-align: center;
-    padding: 20px 0px;
+  background-color: #01a1dd;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 .descripcionProducto a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .descripcionProducto a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .imagenProducto img:hover {
-    transform: scale(1.5);
-    transition: .3s;
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 
 #codigo2 {
-    position: fixed;
-    width: 400px;
-    /* height: 400px; */
-    background-color: #01a1dd;
-    top: calc(50% - 200px);
-    left: calc(50% - 200px);
-    border: 10px solid cyan;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  #boton {
-    font-size: 12px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    font-weight: bold;
-  }
+  position: fixed;
+  width: 400px;
+  /* height: 400px; */
+  background-color: #01a1dd;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  border: 10px solid cyan;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-  #aceptar, #aceptarOferta {
-    margin-top: 15px;
-    padding: 5px 10px;
-  }
-  
+#boton {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-weight: bold;
+}
+
+#aceptar,
+#aceptarOferta {
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+#tachado {
+  text-decoration: line-through;
+}

@@ -60,15 +60,27 @@
       <p id="codigo"></p>
       <button id="boton" onclick="cerrarPopup()">X</button>
       <button id="aceptarOferta" onclick="ofertaPersonalizada()">SI</button>
-      <input type="text" id="inputNombre" placeholder="Ingresa tu nombre" required>
-        <input type="email" id="inputMail" placeholder="Ingresa tu mail" required>
-        <div>
-            <input type="checkbox" id="inputRN"><label id="label">¿Desea recibir novedades?</label>
-        </div>
-        <div class="botones" id="botones">
-            <button id="aceptar" onclick="respuesta('si')">SI</button>
-            <button id="rechazar" onclick="respuesta('no')">NO</button>
-        </div>
+      <input
+        type="text"
+        id="inputNombre"
+        placeholder="Ingresa tu nombre"
+        required
+      />
+      <input
+        type="email"
+        id="inputMail"
+        placeholder="Ingresa tu mail"
+        required
+      />
+      <div>
+        <input type="checkbox" id="inputRN" /><label id="label"
+          >¿Desea recibir novedades?</label
+        >
+      </div>
+      <div class="botones" id="botones">
+        <button id="aceptar" onclick="respuesta('si')">SI</button>
+        <button id="rechazar" onclick="respuesta('no')">NO</button>
+      </div>
     </div>
     <!-- header -->
     <div class="contenedor">
@@ -88,6 +100,7 @@
     <!-- contenido de la pagina -->
     <div class="productos">
       <h1>Productos</h1>
+      <div id="nuevabici"></div>
       <div class="articulo">
         <div class="imagenProducto">
           <a href="imagenes/UrbanaCity.png"

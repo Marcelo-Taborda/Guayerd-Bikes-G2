@@ -9,6 +9,34 @@ const label = document.getElementById("label");
 const aceptarOferta = document.getElementById("aceptarOferta");
 var ingresoDatos;
 
+var url = "https://demo2420474.mockable.io/userData";
+var data = { token: "", name: "", email: "", sendEmail: "" };
+
+let local = () => {
+  if (localStorage.getItem("mail")) {
+    data.name = localStorage.getItem("nombre");
+    data.email = localStorage.getItem("mail");
+    data.sendEmail = localStorage.getItem("ingresoDatos");
+    // data.token = document.querySelector("#subject").value;
+    // data.message = document.querySelector("#mensaje").value;
+    // var contacto = new XMLHttpRequest();
+    // contacto.open("POST", "https://demo2420474.mockable.io/submitForm"); //Le damos parametros: El primero es el método y el segundo es la URL a la que apuntamos
+    // contacto.send(datos);
+    fetch(url, {
+      method: "POST", // or 'PUT'
+      body: JSON.stringify(data), // data can be `string` or {object}!
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .catch((error) => console.error("Error:", error))
+      .then((response) => console.log("Success:", response));
+  }
+};
+
+local();
+
 //Esta funcion pregunta al usuario si desea ingresar su nombre y mail//
 preguntarDatos();
 function preguntarDatos() {

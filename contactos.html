@@ -57,15 +57,27 @@
       <p id="codigo"></p>
       <button id="boton" onclick="cerrarPopup()">X</button>
       <button id="aceptarOferta" onclick="ofertaPersonalizada()">SI</button>
-      <input type="text" id="inputNombre" placeholder="Ingresa tu nombre" required>
-        <input type="email" id="inputMail" placeholder="Ingresa tu mail" required>
-        <div>
-            <input type="checkbox" id="inputRN"><label id="label">¿Desea recibir novedades?</label>
-        </div>
-        <div class="botones" id="botones">
-            <button id="aceptar" onclick="respuesta('si')">SI</button>
-            <button id="rechazar" onclick="respuesta('no')">NO</button>
-        </div>
+      <input
+        type="text"
+        id="inputNombre"
+        placeholder="Ingresa tu nombre"
+        required
+      />
+      <input
+        type="email"
+        id="inputMail"
+        placeholder="Ingresa tu mail"
+        required
+      />
+      <div>
+        <input type="checkbox" id="inputRN" /><label id="label"
+          >¿Desea recibir novedades?</label
+        >
+      </div>
+      <div class="botones" id="botones">
+        <button id="aceptar" onclick="respuesta('si')">SI</button>
+        <button id="rechazar" onclick="respuesta('no')">NO</button>
+      </div>
     </div>
     <!-- header de la pagina -->
     <div class="contenedor">
@@ -86,7 +98,7 @@
     <div class="titulof">
       <h1>Contacto</h1>
     </div>
-    <div class="formulario">
+    <form id="form" class="formulario">
       <div class="contenido-contacto">
         <div class="caja-campo">
           <label>Nombre:</label>
@@ -94,7 +106,9 @@
             class="cont2"
             type="text"
             name="Nombre"
+            id="Nombre"
             placeholder="Ingresa tu nombre"
+            required
           />
         </div>
         <div class="caja-campo">
@@ -103,12 +117,14 @@
             class="cont2"
             type="mail"
             name="Email"
+            id="Email"
             placeholder="Ingresa tu E-mail"
+            required
           />
         </div>
         <div class="caja-campo">
           <label> Tema: </label>
-          <select>
+          <select id="subject">
             <option>Venta</option>
             <option>Trabajo</option>
             <option>Reparación</option>
@@ -117,13 +133,20 @@
         </div>
         <div class="caja-campo">
           <label>Mensaje:</label>
-          <textarea class="cont2" name="mensaje" cols="30" rows="10"></textarea>
+          <textarea
+            id="mensaje"
+            class="cont2"
+            name="mensaje"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
         </div>
         <div class="button">
           <input type="submit" value="Enviar" />
         </div>
       </div>
-    </div>
+    </form>
     <div class="titulof">
       <h2>Nuestra ubicación</h2>
     </div>
@@ -157,7 +180,7 @@
     <a href="https://wa.me/5491161752344" class="airIcon"
       ><img src="imagenes/whatsapp.png" alt=""
     /></a>
-    
+
     <script src="js/script.js"></script>
     <script src="js/contactos.js"></script>
   </body>
